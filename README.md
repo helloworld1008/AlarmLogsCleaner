@@ -26,3 +26,39 @@ object=card//slot=xsb || Card-Ctrl-Fail || gentime= 2020-02-05,08:52:00
 ## Requirements
 Linux machine with python 2.7 installed
 
+## How to use
+Clone this file from the repo, give it executable permissions and run it without any arguments
+
+#### Note: 
+The original alarm logs folder must be in the same directory where the script is present
+
+```sh
+[user@localhost]# ./alarm_logs_cleaner.py 
+
+Enter alarm logs folder name: router1_alarm_logs
+
+
+Cleaning file router1_alarm_logs/alm_log2.xml...
+Done
+
+
+Cleaning file router1_alarm_logs/alm_log4.xml...
+Done
+
+
+Cleaning file router1_alarm_logs/alm_log3.xml...
+Done
+
+
+Cleaning file router1_alarm_logs/alm_log0.xml...
+Done
+
+
+Cleaning file router1_alarm_logs/alm_log1.xml...
+Done
+
+
+Logs saved to /tmp/router1_alarm_logs/
+
+[user@localhost]#
+```
